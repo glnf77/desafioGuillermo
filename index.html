@@ -105,7 +105,7 @@
 
         <div class="row">
           <div class="col text-uppercase text-center">
-            <small>Venta</small>
+            <br>
             <h2>Valor de ticket $200</h2>
           </div>
         </div>
@@ -117,17 +117,17 @@
             <form>
               <div class="form-row">
                 <div class="form-group col-12 col-md-6">
-                  <input id="nombre"type="text" class="form-control" placeholder="Nombre">
+                  <input id="nombre"type="text" class="form-control" placeholder="Nombre Completo">
                 </div>
                 <div class="form-group col-12 col-md-6">
-                  <input type="text" class="form-control" placeholder="Apellido">
+                  <input type="text" class="form-control" placeholder="Apellido Completo">
                 </div>
                 <div class="form-group col-12 col-md-12">
-                  <input type="email" class="form-control" placeholder="Correo">
+                  <input id="email" type="email" class="form-control" placeholder="Correo">
                 </div>
                 <div class="form-group col-12 col-md-6">
                   <label for="">Cantidad</label>
-                  <input id="cantidadEntrada" type="text" class="form-control"  placeholder="cantidad">
+                  <input id="cantidadEntrada" type="text" class="form-control"  placeholder="Indique cantidad de entradas">
                 </div>
                 <div class="form-group col-12 col-md-6">
                   <label for="">Categoria</label>
@@ -143,19 +143,20 @@
               </div>
               </div>
               <div class="form-row">
-                <div class="form-group col">
-                  <div id="totalCompra" class="alert alert-primary" role="alert">
-                    Total a Pagar:  $
-                  </div>
-                 
-                </div>
-              </div>
-              <div class="form-row">
                 <div class="col">
                   <button type="reset" class="btn btn-codo btn-block">Borrar</button>
                 </div>
                 <div class="col">
-                  <button type="button" id="botonCalcular" onclick="asignarValor()" class="btn btn-codo btn-block">Resumen</button>
+                  <button type="button" id="botonCalcular" onclick="asignarValor()" class="btn btn-codo btn-block">Pagar</button>
+                </div>
+              </div>
+              <br>
+              <div class="form-row">
+                <div class="form-group col">
+                  <div class="alert alert-primary" role="alert">
+                    <h5 id="totalCompra"></h5>
+                    <h5 id="totalCompra1"></h5>
+                  </div>
                 </div>
               </div>
             </form>
